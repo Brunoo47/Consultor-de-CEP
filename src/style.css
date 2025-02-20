@@ -4,13 +4,13 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: linear-gradient(#121212, #212b46);
+    background: linear-gradient(#808080, #000000);
 
 }
 .title{
     font-size: 85px;
     color: #fff;
-    animation: flipTitle 2s;
+    animation: sliden;
 }
 @keyframes flipTitle{
     from{
@@ -33,7 +33,7 @@ box-shadow: 1px 3px 8px rgba(0,0,0, 0.5);
 background-color: transparent;
 border:0;
 font-size: 20px;
-color:#fff;
+color:#ffffff;
 outline: none;
 margin-right: 8px;
 
@@ -44,15 +44,15 @@ margin-right: 8px;
     
 }
 .buttonSeacrh{
-    background-color: transparent;
-    border: 0;
+    background-color: #808080;
+    border: 5px solid #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     transition: transform 0.5s;
 }
-.buttonSeacrh::hover{
+.buttonSeacrh:hover{
     transform: scale(1.2);
 
 
@@ -63,17 +63,17 @@ margin-right: 8px;
     align-items: center;
     flex-direction: column;
     background-color: #fff;
-    width: 500px;
+   width: 500px;
     border-radius: 8px;
 
 }
 .main h2{
     margin: 16px 0;
-    font-size: 39px;
+    font-size: 32px;
 
 }
 .main span{
-    margin-bottom: 16px;
+    margin-bottom: 8px;
     font-weight: bold;
 }
 

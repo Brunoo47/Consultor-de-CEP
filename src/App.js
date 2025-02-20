@@ -8,7 +8,6 @@ function App() {
   const [cep, setCep] = useState({});
 
   async function handleSearch() {
-    // 89220306/json/
     if (input === '') {
       alert('preencha algum cep');
       return;
@@ -17,37 +16,42 @@ function App() {
     try {
       const response = await api.get(`${input}/json`);
       setCep(response.data)
+        console.log(response.data)
       setInput("")
-      // You can set the cep state if required
-      // setCep(response.data);
     } catch (error) {
-      alert('Ops! Erro ao buscar o cep');
+      alert('Erro ao buscar o cep');
       setInput('');
+      setCep({})
     }
   }
 
   return (
-    <div className="container">
-      <h1 className="title">Consulta de cep</h1>
-      <div className="containerInput">
-        <input
-          type="text"
-          placeholder="Consulte seu cep"
-          value={input}
-          onChange={(event) => setInput(event.target.value)}
-        />
-        <button className="ButtonSearch" onClick={handleSearch}>
-          <FiSearch size={25} color="#000" />
-        </button>
+      <div className="container">
+        <h1 className="title">Consulte seu CEP</h1>
+        <div className="containerInput">
+          <input
+              type="text"
+              placeholder="Consulte seu cep"
+              value={input}
+              onChange={(event) => setInput(event.target.value)}
+
+          />
+          <button className="ButtonSearch" onClick={handleSearch}>
+            <FiSearch size={25} color="#000"/>
+          </button>
+        </div>
+        <main className="main">
+          {cep.cep && (
+              <>
+                <h2>CEP: {cep.cep}</h2>
+                <span>RUA: {cep.logradouro}</span>
+                <span>BAIRRO: {cep.bairro}</span>
+                <span>CIDADE: {cep.localidade} - {cep.uf}</span>
+                <span>DDD: {cep.ddd}</span>
+              </>
+          )}
+        </main>
       </div>
-      <main className="main">
-        <h2>15540386778</h2>
-        <span>Rua teste alguma</span>
-        <span>complemento</span>
-        <span>vila rosa</span>
-        <span>parana</span>
-      </main>
-    </div>
   );
 }
 
