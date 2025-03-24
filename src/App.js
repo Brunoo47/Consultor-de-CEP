@@ -9,7 +9,7 @@ function App() {
 
   async function handleSearch() {
     if (input === '') {
-      alert('preencha algum cep');
+    alert("Preencha algum CEP")
       return;
     }
 
