@@ -19,7 +19,7 @@ function App() {
         console.log(response.data)
       setInput("")
     } catch (error) {
-      alert('Erro ao buscar o cep');
+      alert('Erro ao buscar o CEP');
       setInput('');
       setCep({})
     }
