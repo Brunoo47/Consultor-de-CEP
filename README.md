@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+Consulta de CEP - Desafio ULTRA LIMS
+Este projeto foi desenvolvido como parte de um desafio para a empresa ULTRA LIMS. Ele implementa a funcionalidade de consulta de CEP utilizando React.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Funcionalidades
+Pesquisa de CEP em tempo real
+Busca de dados de endereço com base no CEP informado
+Utilizando API solicitada pela empresa
+Exibição dinâmica dos resultados, com tratamento de erros e respostas vazias
+Scripts Disponíveis
+No diretório do projeto, você pode executar os seguintes comandos:
 
-## Available Scripts
+npm start
+Executa o aplicativo em modo de desenvolvimento.
+Abra http://localhost:3000 para visualizar no seu navegador.
 
-In the project directory, you can run:
+A página será recarregada automaticamente quando você fizer alterações.
+Qualquer erro de lint será exibido no console.
 
-### `npm start`
+npm test
+Inicia o runner de testes no modo interativo de vigilância.
+Para mais informações sobre como rodar os testes, consulte a documentação de testes do Create React App.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+npm run build
+Cria a versão otimizada do aplicativo para produção na pasta build.
+A versão será minificada e os nomes dos arquivos incluirão hashes para melhor performance.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+npm run eject
+Atenção: Esta é uma operação irreversível. Após usar o eject, não é possível reverter.
 
-### `npm test`
+Se você deseja personalizar as ferramentas de build e configurações (como webpack, Babel, ESLint), pode usar o comando eject a qualquer momento. Isso moverá todos os arquivos de configuração e dependências para o seu projeto, permitindo que você tenha controle total sobre as configurações. No entanto, você será responsável por gerenciá-las a partir deste ponto.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Recomendamos utilizar a configuração padrão para a maioria dos projetos, a menos que a personalização seja necessária.
 
-### `npm run build`
+Aprenda Mais
+Você pode consultar a documentação detalhada nos seguintes links:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Documentação do Create React App
+Documentação do React
+Funcionalidades e Performance
+Divisão de Código: Saiba mais sobre como otimizar seu aplicativo utilizando Divisão de Código.
+Análise do Tamanho do Pacote: Veja como analisar o tamanho do pacote do seu aplicativo aqui.
+Aplicação Web Progressiva: Aprenda como transformar seu aplicativo em um PWA aqui.
+Implantação: Consulte o Guia de Implantação para opções de implantação.
+Solução de Problemas
+Se você encontrar problemas ao rodar o comando npm run build, consulte o guia de solução de problemas.
